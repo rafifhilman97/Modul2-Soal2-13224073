@@ -1,5 +1,5 @@
 // PRAKTIKUM PMP 
-// Modul      : Dynamic Structures 
+// Modul      : DATA MANIPULATION, EXTERNAL FILES,  STRUCTURES AND DYNAMIC ARRAYS
 // Nama       : Rafif Hilman Muhammad
 // NIM        : 13224073
 // Nomor Soal : 2 
@@ -69,7 +69,7 @@ int main(void){
 
     for (int i = 1; i <= MAX; i++){
         int n = 0;
-        scanf("%d", n);
+        scanf("%d", &n);
         tambahDiAkhir(&head, n, i);
         char c = getchar();
         if (c == '\n'){
@@ -77,6 +77,6 @@ int main(void){
         }
     }
 
-    tidakKena(&head);
+    tidakKena(head);
     return 0;
 }

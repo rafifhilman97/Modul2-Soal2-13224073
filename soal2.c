@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX 100 // JANGAN LUPA UBAH PIP
+#define MAX 100 
 
 struct bunga {
     int tinggi; // tinggi bunga batahari                       
@@ -50,17 +50,23 @@ void tambahDiAkhir(struct bunga** head_ref, int tinggiBaru, int posisiBaru) {
 }
 
 void tidakKena(struct bunga* head_ref){
+    int penanda = 0;
     if (head_ref == NULL) {
-        printf("NONE");
+        printf("NONE\n");
+        penanda = 1;
         return;
     }
     while (head_ref != NULL){
         if (head_ref->prev != NULL && head_ref->next != NULL){
             if (head_ref->tinggi < head_ref->next->tinggi && head_ref->tinggi < head_ref->prev->tinggi){
                 printf("%d ", head_ref->posisi);
+                penanda = 1;
             }
         }
         head_ref = head_ref->next;
+    }
+    if (penanda = 0){
+        printf("NONE\n");
     }
 }
 

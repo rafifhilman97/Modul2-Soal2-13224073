@@ -51,7 +51,7 @@ void tambahDiAkhir(struct bunga** head_ref, int tinggiBaru, int posisiBaru) {
 
 void tidakKena(struct bunga* head_ref){
     if (head_ref == NULL) {
-        printf("NONE\n");
+        printf("NONE");
         return;
     }
     while (head_ref != NULL){

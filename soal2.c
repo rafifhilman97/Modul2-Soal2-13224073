@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX 100 
+#define MAX 100
 
 struct bunga {
     int tinggi; // tinggi bunga batahari                       
@@ -52,7 +52,7 @@ void tambahDiAkhir(struct bunga** head_ref, int tinggiBaru, int posisiBaru) {
 void tidakKena(struct bunga* head_ref){
     int penanda = 0;
     if (head_ref == NULL) {
-        printf("NONE\n");
+        printf("NONE");
         penanda = 1;
         return;
     }
@@ -66,7 +66,7 @@ void tidakKena(struct bunga* head_ref){
         head_ref = head_ref->next;
     }
     if (penanda = 0){
-        printf("NONE\n");
+        printf("NONE");
     }
 }
 
